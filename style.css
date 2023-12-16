@@ -1,0 +1,72 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#category-selector select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Light gray border */
+  background-color: white;
+  font-size: 16px;
+  color: #333; /* Dark text for readability */
+  cursor: pointer;
+}
+
+#wallpaper-container {
+  height: calc(100% - 60px);
+  background-size: cover;
+  background-position: center;
+}
+
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+#tutorial {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #333; /* Dark background for the tutorial box */
+}
+
+#tutorial button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: #007bff; /* Example button color */
+}
+/* Add your additional styling here */
